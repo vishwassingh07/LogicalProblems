@@ -8,7 +8,7 @@ namespace LogicalProblems
             Console.WriteLine("Welcome to the Logical Problems");
             bool end = true;
             Console.WriteLine("1. Fibonacci Seriesn\n2. Perfect Number\n3. " +
-                "Prime Number\n4. End of the program");
+                "Prime Number\n4. Reverse Number\n5. End of the program");
             while (end == true)
             {
                 Console.WriteLine("Choose the program to execute: ");
@@ -28,6 +28,10 @@ namespace LogicalProblems
                         prime.CheckingPrime();
                         break;
                     case 4:
+                        ReverseNumber reverse = new ReverseNumber();
+                        reverse.ReverseNum();
+                        break;
+                    case 5:
                         end = false;
                         break;
                     default:
