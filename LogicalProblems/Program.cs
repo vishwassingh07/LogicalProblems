@@ -7,7 +7,7 @@ namespace LogicalProblems
         {
             Console.WriteLine("Welcome to the Logical Problems");
             bool end = true;
-            Console.WriteLine("1. Fibonacci Seriesn\n2. End of the program");
+            Console.WriteLine("1. Fibonacci Seriesn\n2.Perfect Number\n3. End of the program");
             while (end == true)
             {
                 Console.WriteLine("Choose the program to execute: ");
@@ -19,6 +19,10 @@ namespace LogicalProblems
                         fiboSeries.Fibonacci();
                         break;
                     case 2:
+                        PerfectNumber num = new PerfectNumber();
+                        num.PerfectNum();
+                        break;
+                    case 3:
                         end = false;
                         break;
                     default:
