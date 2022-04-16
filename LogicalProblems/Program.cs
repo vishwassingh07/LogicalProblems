@@ -9,7 +9,7 @@ namespace LogicalProblems
             bool end = true;
             Console.WriteLine("1. Fibonacci Seriesn\n2. Perfect Number\n3. " +
                 "Prime Number\n4. Reverse Number\n5.Temperature Conversion\n6." +
-                "Monthly Payment\n7. End of the program");
+                "Monthly Payment\n7. Day Of Week\n8. End of the program");
             while (end == true)
             {
                 Console.WriteLine("Choose the program to execute: ");
@@ -42,6 +42,10 @@ namespace LogicalProblems
                         computation.PaymentCalculation();
                         break;
                     case 7:
+                        DayOfWeek whichday = new DayOfWeek();
+                        whichday.Day();
+                        break;
+                    case 8:
                         end = false;
                         break;
                     default:
