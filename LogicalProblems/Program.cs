@@ -8,7 +8,8 @@ namespace LogicalProblems
             Console.WriteLine("Welcome to the Logical Problems");
             bool end = true;
             Console.WriteLine("1. Fibonacci Seriesn\n2. Perfect Number\n3. " +
-                "Prime Number\n4. Reverse Number\n5.Temperature Conversion\n6. End of the program");
+                "Prime Number\n4. Reverse Number\n5.Temperature Conversion\n6." +
+                "Monthly Payment\n7. End of the program");
             while (end == true)
             {
                 Console.WriteLine("Choose the program to execute: ");
@@ -37,6 +38,10 @@ namespace LogicalProblems
                         conversion.FarheniteToCelsius();
                         break;
                     case 6:
+                        MonthlyPayment computation = new MonthlyPayment();
+                        computation.PaymentCalculation();
+                        break;
+                    case 7:
                         end = false;
                         break;
                     default:
