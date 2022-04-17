@@ -9,7 +9,8 @@ namespace LogicalProblems
             bool end = true;
             Console.WriteLine("1. Fibonacci Seriesn\n2. Perfect Number\n3. " +
                 "Prime Number\n4. Reverse Number\n5.Temperature Conversion\n6." +
-                "Monthly Payment\n7. Day Of Week\n8. Vending Machine\n9. End of the program");
+                "Monthly Payment\n7. Day Of Week\n8. Vending Machine\n9. Distinct Coupon Number\n10." +
+                " End of the program");
             while (end == true)
             {
                 Console.WriteLine("Choose the program to execute: ");
@@ -50,6 +51,10 @@ namespace LogicalProblems
                         notes.NoteFrequency();
                         break;
                     case 9:
+                        CouponNumber unique = new CouponNumber();
+                        unique.Coupon();
+                        break;
+                    case 10:
                         end = false;
                         break;
                     default:
